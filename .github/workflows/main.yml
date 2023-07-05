@@ -1,0 +1,24 @@
+name: summer-test
+on: [push]
+jobs:
+  summer-test:
+    runs-on: ubuntu-20.04
+    steps:
+    - run:
+        echo ***LOAD***
+        sudo mkdir -p /home/summer/
+        sudo git clone https://github.com/jehee0223/summer.git /home/summer/
+        cd /home/summer/
+        echo *** LOAD ***
+        
+        echo *** INSTALL ***
+        sudo apt-get update
+        sudo apt install python3-pip
+       
+       sudo apt install python3-pytest
+       
+       echo *** INSTALL ***
+       
+       echo *** TEST ***
+       pytest-3 test_bench.py --disable_warnings
+       echo *** TEST ***
