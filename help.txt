@@ -1,0 +1,13 @@
+코드를 통해 홈페이지에 들어가는 것을 구현해 보았습니다.
+
+필요한것(chrome기준)
+1. library 설치
+-> 프롬프트를 통해 selenium 설치 (pip install selenium 입력)
+
+2. chromedirver 설치
+->https://chromedriver.chromium.org/downloads 여기에 들어가 
+chrome버전에 맞는 driver설치
+
+3. 압축풀기
+
+4. 실행창에 원하는 메뉴 입력(3가지)
